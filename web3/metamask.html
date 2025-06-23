@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web3 Borsa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🪙 Web3 Borsa</h1>
+    <button id="connectBtn">🦊 MetaMask'ı Bağla</button>
+    <p id="wallet">Cüzdan: -</p>
+
+    <div class="swap-box">
+      <input type="text" id="amount" placeholder="Miktar gir (örn: 1)" />
+      <div class="select-row">
+        <select id="fromToken">
+          <option value="ETH">ETH</option>
+          <option value="DAI">DAI</option>
+        </select>
+        <span>→</span>
+        <select id="toToken">
+          <option value="DAI">DAI</option>
+          <option value="ETH">ETH</option>
+        </select>
+      </div>
+      <button id="swapBtn">🔁 Takas Et (Simülasyon)</button>
+    </div>
+  </div>
+
+  <div id="messageBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
